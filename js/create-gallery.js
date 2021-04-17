@@ -41,6 +41,7 @@ const openModal = () => {
   lightbox.classList.add('is-open');
   lightboxOverlay.addEventListener('click', onOverlayClick);
   window.addEventListener('keydown', onBtnPress);
+ 
 };
 
 
@@ -56,7 +57,7 @@ const closeModal = () => {
 // Подмена значения атрибута src элемента img.lightbox__image.
 const onGalleryClick = event => {
   event.preventDefault();
-   document.body.style.overflow = 'hidden'; // Неподвижный боди при открытой модалке
+   
   if (event.target.nodeName !== 'IMG') {
     return;
   }
